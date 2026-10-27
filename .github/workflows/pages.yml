@@ -30,10 +30,6 @@ jobs:
       - name: Build the website
         working-directory: frontend
         run: npm run build
-      - name: Set up GitHub Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - name: Prepare website files for publishing
         uses: actions/upload-pages-artifact@v3
         with:
